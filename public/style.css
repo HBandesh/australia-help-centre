@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+@font-face {
+    font-family: 'firrasansRegular';
+    src: url('./fonts/fira-sans.regular.ttf');
+}
+@font-face {
+    font-family: 'firrasansBold';
+    src: url('./fonts/fira-sans.semibold.ttf');
+}
+body {
+    color: #383030;
+    font-family: 'firrasansRegular';
+}
+
+
+
+.wrapper{
+    padding: 3%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 1.5%;
+    margin-bottom: 3%;
+}
+.page-title {
+    color: #41B3A3;
+    font-family: 'firrasansBold';
+    font-size: 56px;
+}
+.video-anchor {
+    font-size: 23px;
+    padding-top: 2%;
+    cursor: pointer;
+}
+.video-anchor:hover {
+    color: #41B3A3;
+}
+
+.article-wrapper {
+    padding: 5% 6%;
+}
+
+.page-desc {
+    font-size: 20px;
+    line-height: 2;
+}
+
+
+
+.playlist-heading {
+    font-size: 40px;
+    color: #41B3A3;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 1%;
+    margin-bottom: 4%;
+}
+.list-item-anchor {
+    display: flex;
+    text-decoration: none;
+    color: #383030;
+}
+.thumbnail-wrapper {
+    width: 40%;
+}
+.thumbnail{
+    width: 100%;
+}
+.video-desc {
+    margin: auto 0;
+    margin-left: 6%;
+}
+.list-item-anchor:hover {
+    color: #41B3A3;
+}
