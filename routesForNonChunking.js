@@ -17,7 +17,7 @@ import {Footer} from './app/components/footer';
  */
 const getHead = () => {
 	return(`<!DOCTYPE html>
-		<html>${renderToString(<Head/>)}`);
+		<html lang="en">${renderToString(<Head/>)}`);
 }
 
 /**

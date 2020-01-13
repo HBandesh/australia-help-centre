@@ -2,6 +2,9 @@
     margin:0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 ul {
     list-style-type: none;
 }
@@ -17,6 +20,9 @@ body {
     color: #383030;
     font-family: 'firrasansRegular';
 }
+img {
+    width: 100%;
+}
 
 
 
@@ -31,17 +37,20 @@ body {
     margin-bottom: 3%;
 }
 .page-title {
-    color: #41B3A3;
-    font-family: 'firrasansBold';
+    color: #039e89;
+    font-family: 'firrasansRegular';
     font-size: 56px;
 }
 .video-anchor {
     font-size: 23px;
     padding-top: 2%;
     cursor: pointer;
+    text-decoration: none;
+    color: #383030;
+
 }
 .video-anchor:hover {
-    color: #41B3A3;
+    color: #039e89;
 }
 
 .article-wrapper {
@@ -55,9 +64,12 @@ body {
 
 
 
-.playlist-heading {
+.playlist-wrapper {
+    padding-top: 3%;
+}
+.article-heading {
     font-size: 40px;
-    color: #41B3A3;
+    color: #039e89;
     border-bottom: 1px solid #d3d3d3;
     padding-bottom: 1%;
     margin-bottom: 4%;
@@ -70,13 +82,132 @@ body {
 .thumbnail-wrapper {
     width: 40%;
 }
-.thumbnail{
-    width: 100%;
+.thumbnail {
+    border-radius: 5%;
 }
 .video-desc {
     margin: auto 0;
     margin-left: 6%;
 }
 .list-item-anchor:hover {
-    color: #41B3A3;
+    color: #039e89;
+}
+
+
+.member-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%
+}
+.member-item {
+    width: 15%;
+}
+.member-image {
+    border-radius: 50%;
+}
+.name, .desgination {
+    text-align: center;
+    margin: 6% 0;
+}
+.name {
+    color: #006d5e;
+}
+
+
+.footer {
+    padding: 2% 0;
+    text-align: center;
+}
+.linkedin {
+    text-decoration: none;
+    color: #039e89;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .thumbnail-wrapper {
+      width: 60%;
+    }
+    .page-title {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .page-desc {
+        font-size: 15px;
+    }
+    .video-anchor{
+        font-size: 19px;
+    }
+    .page-title {
+        font-size: 35px;
+    }
+    .article-heading {
+        font-size: 25px;
+    }
+    .thumbnail-wrapper {
+        width: 90%;
+    }
+    .video-desc {
+        font-size: 13px;
+    }
+    .footer {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .header {
+        flex-wrap: wrap;
+        text-align: center;
+        padding-bottom: 7.5%;
+        justify-content: center;
+    }
+    .video-anchor {
+        border: 1px solid #039e89;
+        padding: 3%;
+        border-radius: 8px;
+    }
+    .page-title {
+        width: 100%;
+        margin-bottom: 16%;
+    }
+    .list-item-anchor{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .thumbnail-wrapper {
+        width: 65%;
+        margin-bottom: 7%;
+    }
+    .playlist-wrapper {
+        padding-top: 11%;
+    }
+    .video-desc {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 15px;
+    }
+    .article-wrapper {
+        padding: 13% 6%;
+    }
+    .article-heading {
+        padding-bottom: 5%;
+    }
+    .member-image {
+        width: 60%;
+    }
+    .member-item {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 13%;
+    }
+    .member-wrapper {
+        padding-top: 14%;
+        flex-wrap: wrap;
+    }
+    .footer {
+        font-size: 12px;
+    }
 }

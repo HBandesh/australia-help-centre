@@ -5,27 +5,28 @@ import React from 'react';
 
 const memberList = [{
     name: "Harnoor Bandesh",
-    desigination: "",
-    image:"",
+    desigination: "CEO and Protagonist",
+    image:"../../images/CEO.jpg",
 },{
     name: "Dixit Jain",
-    desigination: "",
-    image:"",
+    desigination: "Content Manager",
+    image:"../../images/contentManager.jpg",
 },{
     name: "Navpreet Singh",
-    desigination: "",
-    image:"",
+    desigination: "Digital Media Manager",
+    image:"../../images/digitalMediaManager.jpg",
 }]
 
 export const  TeamMembers = () => {
     return(
         <article className="article-wrapper">
-            <ul>
+            <h2 className="article-heading">Team Members</h2>
+            <ul className="member-wrapper">
                 {memberList.map(itm => (
-                    <li key={itm.name}>
-                        <img src={itm.image}></img>
-                        <p>{itm.name}</p>
-                        <p>{itm.desigination}</p>
+                    <li key={itm.name} className="member-item">
+                        <img src={itm.image} className="member-image" alt=""></img>
+                        <p className="name">{itm.name}</p>
+                        <p className="desgination">{itm.desigination}</p>
                     </li>
                 ))}
             </ul>

@@ -11,7 +11,7 @@ export const  Header = ({}) => {
     return(
         <header className="header">
             <h1 className="page-title">How to find Jobs in Australia</h1>
-            <p className="video-anchor">Videos</p>
+            <a className="video-anchor" href="#playlist">Videos</a>
         </header>
     );
 }

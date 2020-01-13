@@ -12,12 +12,12 @@ const videoList = [{
 
 export const Playlist = () => {
     return(
-        <article className="article-wrapper">
-            <h2 className="playlist-heading">Playlist</h2>
-            <ul >
+        <article className="article-wrapper" id="playlist">
+            <h2 className="article-heading">Playlist</h2>
+            <ul className="playlist-wrapper">
                 {videoList.map(itm =>(
                     <li key={itm.url} className="list-item">
-                        <a href={itm.url} target="_blank" title={itm.alt} className="list-item-anchor">
+                        <a href={itm.url} target="_blank" rel="noopener" title={itm.alt} className="list-item-anchor">
                             <p className="thumbnail-wrapper">
                                 <img src={itm.thumbnail} alt={itm.alt} className="thumbnail"></img>
                             </p>

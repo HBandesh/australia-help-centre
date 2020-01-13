@@ -5,8 +5,8 @@ import React from 'react';
 
 export const Footer = () => {
     return(
-        <footer>
-            If you have any queries please reach out to us, through LinkedIn. We will be more than happy to help.
+        <footer className="footer">
+            <h2>If you have any queries please reach out through <a className="linkedin" href="https://www.linkedin.com/in/harnoor-bandesh-127642a8/">LinkedIn</a> . We will be more than happy to help.</h2>
         </footer>
     );
 }
