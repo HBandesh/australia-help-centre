@@ -17,7 +17,59 @@ import {Footer} from './app/components/footer';
  */
 const getHead = () => {
 	return(`<!DOCTYPE html>
-		<html lang="en">${renderToString(<Head/>)}`);
+		<html lang="en">
+		<head>
+			<title>How to get job in Australia</title>
+			<script type="application/ld+json">
+                {
+                    "@context": "http://schema.org",
+                    "@type": "VideoObject",
+					"name": "How to get a job in Australia",
+					"description": "Easy and effective ways to get a job in australia even if you are a foreigner, an international student, from overseas like India, or even without local work experience. This video is helpful for the people looking for full time or part time jobs.",
+					"thumbnailUrl": "./images/thumbnails/itJobVideo.jpg",
+					"contentUrl": "https://www.youtube.com/watch?v=Bq7KPsLwuA8",
+					"uploadDate": "2020-01-08T00:00:00-08:00",
+					"duration": "PT9M",
+					"hasPart": [{
+						"@type": "Clip",
+						"name": "LinkdeIn",
+						"startOffset": 52,
+						"endOffset": 262,
+						"url": "https://www.youtube.com/watch?v=Bq7KPsLwuA8&t=52"
+					},
+					{
+						"@type": "Clip",
+						"name": "Meet Up",
+						"startOffset": 263,
+						"endOffset": 383,
+						"url": "https://www.youtube.com/watch?v=Bq7KPsLwuA8&t=263"
+					},
+					{
+						"@type": "Clip",
+						"name": "Slack",
+						"startOffset": 386,
+						"endOffset": 446,
+						"url": "https://www.youtube.com/watch?v=Bq7KPsLwuA8&t=386"
+					},
+					{
+						"@type": "Clip",
+						"name": "Seek And Indeed",
+						"startOffset": 447,
+						"endOffset": 467,
+						"url": "https://www.youtube.com/watch?v=Bq7KPsLwuA8&t=447"
+					},
+					{
+						"@type": "Clip",
+						"name": "Keep yourself motivated",
+						"startOffset": 449,
+						"endOffset": 880,
+						"url": "https://www.youtube.com/watch?v=Bq7KPsLwuA8&t=449"
+					}]
+                }
+            </script>
+			${renderToString(<Head/>)}
+		</head>
+		`);
 }
 
 /**
@@ -45,7 +97,7 @@ const getMainContent = () => {
  * @returns {string} Returns the HTML string
  */
 const getFooter = () => {
-	return (`${renderToString(<Footer />)}</main></div>
+	return (`${renderToString(<Footer />)}</ ></div>
 		</body>	
 		<script src="../../bundle.js"></script>
 		</html>`);
@@ -64,6 +116,6 @@ const generateHtml = (req,res,next) => {
  * @function routesForNonChunking This function builds up the eniter HTML and sends back to the browsers 
  * 								  once all of it is done.
  */
-export const routesForNonChunking = () => {
+export const servePage = () => {
     return ([generateHtml]);
 }

@@ -7,7 +7,7 @@ const videoList = [{
     thumbnail: "../../images/thumbnails/itJobVideo.jpg",
     url: "https://www.youtube.com/watch?v=Bq7KPsLwuA8",
     alt: "how to get a job in australia",
-    description: "loreum ipsum loreum ipsum loreum ipsum loreum ipsum loreum ipsum loreum ipsum loreum ipsum loreum ipsum loreum ipsum loreum ipsum loreum ipsum loreum ipsum loreum ipsum loreum ipsum loreum ipsum loreum ipsum loreum ipsum loreum ipsum loreum ipsum loreum ipsum "
+    description: "5 easy and effective steps to get a job in Australia. Want a full time or part time job? Do not have a local work experience? Then this video is just for you."
 }]
 
 export const Playlist = () => {

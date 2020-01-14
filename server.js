@@ -4,8 +4,7 @@
 
 import express from 'express';
 import compression from 'compression';
-import {routesForNonChunking} from './routesForNonChunking';
-import path from 'path';
+import { servePage } from './requestHandler';
 
 const port = process.env.PORT || 8080 ,
 server = express();
@@ -16,10 +15,7 @@ server.use(express.static('./public'));
 
 //Defining Routes
 //Route for Home page
-server.get("/",(req,res) => res.sendFile(path.join(__dirname + '/index.html')));
-
-//Route for the page without chunking concept implemented.
-server.get("/nonChunking",routesForNonChunking());
+server.get("/",servePage());
 
 server.listen(port,()=>{
 	console.log("express server is listing on configured port "+port);

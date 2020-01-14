@@ -5,14 +5,15 @@ import React from 'react';
 
 export const Head = ({}) => {
     return(
-        <head>
-            <title>CHUNKED POC</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1"/>
-            <link rel="preload" href="style.css" as="style"></link>
-            <link rel="preload" href="../../bundle.js" as="script"></link>
-            <link rel="preload" href="../fonts/fira-sans.regular.ttf" as="font" type="font/ttf" crossOrigin="true"></link>
-            <link rel="preload" href="../fonts/fira-sans.semibold.ttf" as="font" type="font/ttf" crossOrigin="true"></link>
-            <link rel="stylesheet" type="text/css" href="/style.css"/>
-        </head>
+            <React.Fragment>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <meta name="description" content="Easy and Efficent ways to get a job in Australia even if you are a foreigner, an International/overseas student like from India or even without local work experience."></meta>
+                <link rel="preload" href="style.css" as="style"></link>
+                <link rel="preload" href="../../bundle.js" as="script"></link>
+                <link rel="preload" href="../fonts/fira-sans.regular.ttf" as="font" type="font/ttf" crossOrigin="true"></link>
+                <link rel="preload" href="../fonts/fira-sans.semibold.ttf" as="font" type="font/ttf" crossOrigin="true"></link>
+                <link rel="stylesheet" type="text/css" href="/style.css"/>
+            </React.Fragment>
+        
     );
 }

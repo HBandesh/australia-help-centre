@@ -11,10 +11,12 @@ ul {
 @font-face {
     font-family: 'firrasansRegular';
     src: url('./fonts/fira-sans.regular.ttf');
+    font-display: swap;
 }
 @font-face {
     font-family: 'firrasansBold';
     src: url('./fonts/fira-sans.semibold.ttf');
+    font-display: swap;
 }
 body {
     color: #383030;
@@ -37,7 +39,7 @@ img {
     margin-bottom: 3%;
 }
 .page-title {
-    color: #039e89;
+    color: #0080a4;
     font-family: 'firrasansRegular';
     font-size: 56px;
 }
@@ -50,7 +52,7 @@ img {
 
 }
 .video-anchor:hover {
-    color: #039e89;
+    color: #0080a4;
 }
 
 .article-wrapper {
@@ -61,6 +63,11 @@ img {
     font-size: 20px;
     line-height: 2;
 }
+.meta-desc {
+    font-size: 20px;
+    display: inline;
+    color: #0080a4;
+}
 
 
 
@@ -69,7 +76,7 @@ img {
 }
 .article-heading {
     font-size: 40px;
-    color: #039e89;
+    color: #0080a4;
     border-bottom: 1px solid #d3d3d3;
     padding-bottom: 1%;
     margin-bottom: 4%;
@@ -80,7 +87,7 @@ img {
     color: #383030;
 }
 .thumbnail-wrapper {
-    width: 40%;
+    width: 25%;
 }
 .thumbnail {
     border-radius: 5%;
@@ -90,7 +97,7 @@ img {
     margin-left: 6%;
 }
 .list-item-anchor:hover {
-    color: #039e89;
+    color: #0080a4;
 }
 
 
@@ -110,7 +117,7 @@ img {
     margin: 6% 0;
 }
 .name {
-    color: #006d5e;
+    color: #0080a4;
 }
 
 
@@ -120,7 +127,7 @@ img {
 }
 .linkedin {
     text-decoration: none;
-    color: #039e89;
+    color: #0080a4;
 }
 
 
@@ -157,6 +164,8 @@ img {
     }
 }
 
+
+
 @media only screen and (max-width: 425px) {
     .header {
         flex-wrap: wrap;
@@ -165,7 +174,7 @@ img {
         justify-content: center;
     }
     .video-anchor {
-        border: 1px solid #039e89;
+        border: 1px solid #0080a4;
         padding: 3%;
         border-radius: 8px;
     }
