@@ -19,6 +19,15 @@ const getHead = () => {
 	return(`<!DOCTYPE html>
 		<html lang="en">
 		<head>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125622445-1"></script>
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'UA-125622445-1');
+			</script>
 			<title>How to get job in Australia</title>
 			<script type="application/ld+json">
                 {
