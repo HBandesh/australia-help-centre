@@ -19,7 +19,7 @@ const getHead = () => {
 	return(`<!DOCTYPE html>
 		<html lang="en">
 		<head>
-			<title>How to get job in Australia</title>
+			<title>The Australian Dream</title>
 			${renderToString(<Head/>)}
 		</head>
 		`);

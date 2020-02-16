@@ -8,11 +8,14 @@ import {Footer} from './footer';
 
 const App = () => {
 	return (
-		<main className="wrapper">
-			<Header />
-			<MainContent/>
+		<React.Fragment>
+			<main className="wrapper">
+				<Header />
+				<MainContent/>
+				
+			</main>
 			<Footer />
-		</main>
+		</React.Fragment>
 	);
 }
 export default App;

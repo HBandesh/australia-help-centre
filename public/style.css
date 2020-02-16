@@ -29,7 +29,7 @@ img {
 
 
 .wrapper{
-    padding: 3%;
+    padding: 2%;
 }
 .header {
     display: flex;
@@ -39,8 +39,8 @@ img {
     margin-bottom: 3%;
 }
 .page-title {
-    color: #0080a4;
-    font-family: 'firrasansRegular';
+    color: #4e4647;
+    font-family: 'Merriweather', serif;
     font-size: 56px;
 }
 .video-anchor {
@@ -120,8 +120,43 @@ img {
     color: #0080a4;
 }
 
+.linkedin-icon {
+    margin-left: 2%;
+    font-size: 1.5em;
+}
+
+a.linkedinTag {
+    text-decoration: none;
+}
+
+a.linkedinTag:visited {
+    color: #0180a4;
+}
+
+a.linkedinTag:hover {
+    color: #0e9ac1;
+}
+
+.tad-logo {
+    width: 8%;
+}
+
+.navbar {
+    margin-top: 1.5%;
+}
+
+.navbar-ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-ul > li {
+    padding: 0 2%;
+}
 
 .footer {
+    background-color: #4c4c50;
+    color: white;
     padding: 2% 0;
     text-align: center;
 }
