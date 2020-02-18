@@ -19,6 +19,7 @@ const getHead = () => {
 	return(`<!DOCTYPE html>
 		<html lang="en">
 		<head>
+			<link rel="canonical" href="https://www.the-australian-dream.com/" />
 			<!-- Global site tag (gtag.js) - Google Analytics -->
 			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125622445-1"></script>
 			<script>
